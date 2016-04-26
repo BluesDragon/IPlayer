@@ -14,8 +14,14 @@ Android media player library.
 >`android.permission.WRITE_EXTERNAL_STORAGE`<br>
 >`android.permission.WAKE_LOCK`<br>
 
-####集成示例:<br>
-```Java
+####集成介绍:<br>
+>* 音频播放：初始化AudioPlayerManager，调用相关API即可。<br>
+>* 视频播放：<br>
+  1、初始化VideoPlayerManager；<br>
+  2、获取视频显示界面的layout（包含了SurfaceView等）并设置到需要显示的位置，后续会丰富视频现实界面相关的效果。<br>
+  3、调用相关API即可。<br>
+
+```视频播放Demo：（音频Demo不赘述，直接调用播放即可）<br>
 /**
 * 视频播放测试类
 */
