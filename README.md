@@ -1,20 +1,20 @@
 # iplayer
 Android media player library.
 -----------------------------
-####播放器快速开发框架（播放库）背景：<br>
+#### 播放器快速开发框架（播放库）背景：<br>
 >* `在日常项目中，经常会有多媒体相关音、视频模块开发需求，介于Android系统默认多媒体播放整体使用流程比较复杂，在此分享一下这个小型的多媒体应用快速开发框架。`<br>
 >* `框架封装了Android多媒体播放音、视频的基本流程（默认使用Android原生MediaPlayer，如需扩展其他播放引擎，可以通过播放控制接口（IPlayController）进行设置，详见接口注释），只需要初始化并配置好接口，就可以很方便的开发播放器应用。`<br>
   
-####优点：<br>
+#### 优点：<br>
 >* 调用方便，快速开发：所有调用入口全部以接口形式开放，内置默认音视频全部处理流程。<br>
 >* 功能可配置：内置音频、视频两个Manager，除现有默认功能外，可以通过config配置其他功能，如线控等焦点、锁屏监听等；<br>
 >* 高度可扩展：所有模块化功能接口，均可以自定义实现类、或直接继承来自定义功能模块。<br>
     
-####所需权限：<br>
+#### 所需权限：<br>
 >`android.permission.WRITE_EXTERNAL_STORAGE`<br>
 >`android.permission.WAKE_LOCK`<br>
 
-####集成介绍:<br>
+#### 集成介绍:<br>
 >* 音频播放：初始化AudioPlayerManager，调用相关API即可。<br>
 >* 视频播放：<br>
   1、初始化VideoPlayerManager；<br>
